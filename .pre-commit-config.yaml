@@ -1,0 +1,34 @@
+﻿repos:
+-   repo: https://github.com/psf/black
+    rev: '22.3.0'
+    hooks:
+    -   id: black
+-   repo: https://github.com/dfm/black_nbconvert
+    rev: 'v0.4.0'
+    hooks:
+    -   id: black_nbconvert
+-   repo: https://github.com/PyCQA/flake8
+    rev: '4.0.1'
+    hooks:
+    -   id: flake8
+        args: ['--ignore=E265,E50,E501', '--select=C,E,F,W,B,B950', '--extend-ignore=E203,W503', '--max-line-length=88']
+-   repo: https://github.com/PyCQA/isort
+    rev: '5.10.1'
+    hooks:
+    -   id: isort
+        args: ['--profile=black']
+-   repo: https://github.com/kynan/nbstripout
+    rev: '0.5.0'
+    hooks:
+    -   id: nbstripout
+-   repo: https://github.com/pycqa/pydocstyle
+    rev: '6.1.1'
+    hooks:
+    -   id: pydocstyle
+        args: ['--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107', '--convention=google']
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 'v4.2.0'
+    hooks:
+    -   id: check-ast
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace

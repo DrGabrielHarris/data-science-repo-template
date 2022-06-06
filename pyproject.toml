@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "Project Name"
+version = "0.1.0"
+description = "Project Description"
+authors = ["Authors Names"]
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+black-nbconvert = "^0.4.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+nbstripout = "^0.5.0"
+pydocstyle = {extras = ["toml"], version = "^6.1.1"}
+notebook = "^6.4.11"
+pre-commit = "^2.19.0"
+rich = "^v12.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = 'black'
+
+[tool.pydocstyle]
+convention = "google"
+add-ignore = "D100,D101,D102,D103,D104,D105,D106,D107"
