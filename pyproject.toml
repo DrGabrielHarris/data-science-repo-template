@@ -6,6 +6,7 @@ authors = ["Authors Names"]
 
 [tool.poetry.dependencies]
 python = "3.9.*"
+pandas = "^1.4.3"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
