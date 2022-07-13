@@ -4,10 +4,6 @@
     hooks:
     -   id: black
     -   id: black-jupyter
--   repo: https://github.com/dfm/black_nbconvert
-    rev: 'v0.4.0'
-    hooks:
-    -   id: black_nbconvert
 -   repo: https://github.com/PyCQA/flake8
     rev: '4.0.1'
     hooks:
