@@ -2,4 +2,3 @@
 max-line-length = 88
 extend-ignore = E203,E501,W503
 exclude = .venv
-max_complexity = 10
