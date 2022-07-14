@@ -1,7 +1,5 @@
 [flake8]
 max-line-length = 88
-ignore = E265,E50,E501
-extend-ignore = E203,W503
-select = C,E,F,W,B,B950
-exclude = .git
+extend-ignore = E203,E501,W503
+exclude = .venv
 max_complexity = 10
