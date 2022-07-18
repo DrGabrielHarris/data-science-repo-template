@@ -15,8 +15,8 @@ isort = "^5.10.1"
 nbstripout = "^0.5.0"
 pydocstyle = {extras = ["toml"], version = "^6.1.1"}
 notebook = "^6.4.11"
-pre-commit = "^2.19.0"
 rich = "^v12.3.0"
+pre-commit = "^2.19.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
