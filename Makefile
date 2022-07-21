@@ -3,6 +3,7 @@
 
 GLOBAL_PYTHON = $(shell py -3.9 -c 'import sys; print(sys.executable)')
 LOCAL_PYTHON = .\\.venv\\Scripts\\python.exe
+LOCAL_PRE_COMMIT = .\\.venv\\Lib\\site-packages\\pre_commit
 
 setup: venv install pre-commit
 
@@ -14,7 +15,7 @@ install: ${LOCAL_PYTHON}
 	@echo "Installing dependencies..."
 	poetry install --no-root --remove-untracked
 
-pre-commit: ${LOCAL_PYTHON}
+pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 	@echo "Setting up pre-commit..."
 	.\\.venv\\Scripts\\pre-commit install
 	.\\.venv\\Scripts\\pre-commit autoupdate
