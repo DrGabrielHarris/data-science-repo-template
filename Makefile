@@ -20,13 +20,6 @@ pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 	.\\.venv\\Scripts\\pre-commit install
 	.\\.venv\\Scripts\\pre-commit autoupdate
 
-requirements: ${LOCAL_PYTHON}
-	@echo "Exporting requirements..."
-	poetry export -f requirements.txt --output requirements.txt
-
-init_git:
-	git init
-
 clean:
 	if exist .\\.git\\hooks ( rmdir .\\.git\\hooks /q /s )
 	if exist .\\.venv\\ ( rmdir .\\.venv /q /s )
