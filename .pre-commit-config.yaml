@@ -5,7 +5,7 @@
     -   id: black
     -   id: black-jupyter
 -   repo: https://github.com/PyCQA/flake8
-    rev: '4.0.1'
+    rev: '5.0.3'
     hooks:
     -   id: flake8
         args: ['--ignore=E265,E50,E501', '--select=C,E,F,W,B,B950', '--extend-ignore=E203,W503', '--max-line-length=88']
@@ -15,7 +15,7 @@
     -   id: isort
         args: ['--profile=black']
 -   repo: https://github.com/kynan/nbstripout
-    rev: '0.5.0'
+    rev: '0.6.0'
     hooks:
     -   id: nbstripout
 -   repo: https://github.com/pycqa/pydocstyle
