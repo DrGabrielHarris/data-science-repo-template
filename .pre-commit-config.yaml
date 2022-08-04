@@ -8,7 +8,7 @@
     rev: '5.0.3'
     hooks:
     -   id: flake8
-        args: ['--ignore=E265,E50,E501', '--select=C,E,F,W,B,B950', '--extend-ignore=E203,W503', '--max-line-length=88']
+        args: ['--max-line-length=88', '--extend-ignore=E203,E501,W503', '--exclude=.venv']
 -   repo: https://github.com/PyCQA/isort
     rev: '5.10.1'
     hooks:
@@ -22,7 +22,7 @@
     rev: '6.1.1'
     hooks:
     -   id: pydocstyle
-        args: ['--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107', '--convention=google']
+        args: ['--convention=google', '--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107']
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: 'v4.3.0'
     hooks:
