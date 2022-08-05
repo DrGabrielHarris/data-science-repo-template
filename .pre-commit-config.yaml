@@ -5,7 +5,7 @@
     -   id: black
     -   id: black-jupyter
 -   repo: https://github.com/PyCQA/flake8
-    rev: '5.0.3'
+    rev: '5.0.4'
     hooks:
     -   id: flake8
         args: ['--max-line-length=88', '--extend-ignore=E203,E501,W503', '--exclude=.venv']
