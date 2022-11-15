@@ -1,6 +1,6 @@
 ﻿repos:
 -   repo: https://github.com/psf/black
-    rev: '22.6.0'
+    rev: '22.10.0'
     hooks:
     -   id: black
     -   id: black-jupyter
@@ -15,7 +15,7 @@
     -   id: isort
         args: ['--profile=black']
 -   repo: https://github.com/kynan/nbstripout
-    rev: '0.6.0'
+    rev: '0.6.1'
     hooks:
     -   id: nbstripout
 -   repo: https://github.com/pycqa/pydocstyle
