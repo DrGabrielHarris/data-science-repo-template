@@ -1,3 +1,4 @@
+.EXPORT_ALL_VARIABLES:
 .PHONY: venv install pre-commit clean
 
 GLOBAL_PYTHON = $(shell py -3.9 -c 'import sys; print(sys.executable)')
