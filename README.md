@@ -8,12 +8,25 @@ A repository template using Poetry, Makefile, and pre-commit-hooks
 .
 ├── data
 │   ├── processed
-│   └── raw
+│   │   └── v1
+│   ├── raw
+│   │   └── v1
+│   ├── scripts
+│   │   ├── extract.py
+│   │   ├── transform.py
+│   │   └── load.py
+│   └── main.py
 ├── deploy
 │   ├── scripts
 │   └── tests
 ├── develop
-│   └── notebooks
+│   ├── artifacts
+│   ├── eda
+│   ├── notebooks
+│   ├── scripts
+│   │   ├── eda.py
+│   │   └── load.py
+│   └── main.py
 ├── label
 ├── train
 ├── visualise
