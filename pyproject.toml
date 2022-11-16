@@ -13,10 +13,12 @@ black = "*"
 flake8 = "*"
 isort = "*"
 nbstripout = "*"
-pydocstyle = {extras = ["toml"], version = "*"}
 notebook = "*"
 rich = "*"
 pre-commit = "*"
+
+[tool.poetry.group.docs.dependencies]
+pydocstyle = {extras = ["toml"], version = "*"}
 
 [tool.poetry.group.test.dependencies]
 pytest = "*"
