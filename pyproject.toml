@@ -8,7 +8,7 @@ authors = ["Authors Names"]
 python = "3.9.*"
 pandas = "^1"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "*"
 flake8 = "*"
 isort = "*"
@@ -17,6 +17,9 @@ pydocstyle = {extras = ["toml"], version = "*"}
 notebook = "*"
 rich = "*"
 pre-commit = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
