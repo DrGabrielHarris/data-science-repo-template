@@ -2,6 +2,8 @@
 
 A repository template using Poetry, Makefile, and pre-commit-hooks
 
+For more details, read the Medium [article](https://medium.com/@drgabrielharris/python-how-using-poetry-make-and-pre-commit-hooks-to-setup-a-repo-template-for-your-ds-team-15b5a77d0e0f)
+
 ## Project structure
 
 ```bash
