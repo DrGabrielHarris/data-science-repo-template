@@ -13,7 +13,7 @@ venv: $(GLOBAL_PYTHON)
 
 install: ${LOCAL_PYTHON}
 	@echo "Installing dependencies..."
-	poetry install --no-root --remove-untracked
+	poetry install --no-root --sync
 
 pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 	@echo "Setting up pre-commit..."
